@@ -44,6 +44,10 @@
         "source": "/Users/arianaesquivel/AndroidStudioProjects/Volley/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "/Users/arianaesquivel/AndroidStudioProjects/Volley/app/build/intermediates/res/merged/debug/layout_lista_resultados_row.xml.flat",
+        "source": "/Users/arianaesquivel/AndroidStudioProjects/Volley/app/src/main/res/layout/lista_resultados_row.xml"
+    },
+    {
         "merged": "/Users/arianaesquivel/AndroidStudioProjects/Volley/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/arianaesquivel/AndroidStudioProjects/Volley/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },

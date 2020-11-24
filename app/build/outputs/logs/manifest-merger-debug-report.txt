@@ -7,6 +7,7 @@ INJECTED from /Users/arianaesquivel/AndroidStudioProjects/Volley/app/src/main/An
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/cdaa83194e29814d01eb1fc6312e9c9a/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/bf96d2b5a86ecd602a621e7e96856420/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.1.1] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/4978dcfb3d01261bf42b23db5c9580cd/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc03] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/fe5280914f4929e836a5ffd7cfd14166/recyclerview-selection-1.1.0-rc03/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/6e57c04e98c372fcd8878b95a3d5645d/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/ffb6a67829fa40d4c0493cb7e147e8f7/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/7c0677be8011741026309ef690a9f4db/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -97,6 +98,8 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/arianaesquivel/.gradle/c
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/bf96d2b5a86ecd602a621e7e96856420/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.volley:volley:1.1.1] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/4978dcfb3d01261bf42b23db5c9580cd/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.1] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/4978dcfb3d01261bf42b23db5c9580cd/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc03] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/fe5280914f4929e836a5ffd7cfd14166/recyclerview-selection-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview-selection:1.1.0-rc03] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/fe5280914f4929e836a5ffd7cfd14166/recyclerview-selection-1.1.0-rc03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/6e57c04e98c372fcd8878b95a3d5645d/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/6e57c04e98c372fcd8878b95a3d5645d/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/arianaesquivel/.gradle/caches/transforms-2/files-2.1/ffb6a67829fa40d4c0493cb7e147e8f7/cardview-1.0.0/AndroidManifest.xml:20:5-44

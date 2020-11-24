@@ -1,8 +1,12 @@
 package com.example.volley;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Adapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +21,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -24,11 +29,13 @@ import org.json.JSONObject;
 import org.json.JSONStringer;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
 public class MainActivity extends AppCompatActivity {
     private RequestQueue cartero;
+    private RecyclerView mRvListaResultados;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,27 +48,46 @@ public class MainActivity extends AppCompatActivity {
         //obtenerObjeto();
         ObtenerDatos();
         obtenerObjeto_lista();
+
     }
 
     //SERIALIZACÓN = Convertir a JSON
     //DESERIALIZACIÓN = Convertir de JSON al objeto
 
     private void obtenerObjeto_lista(){
+        mRvListaResultados = findViewById(R.id.resultados);
+        mRvListaResultados.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        mRvListaResultados.setLayoutManager(linearLayoutManager);
+
         String url = "http://jsonplaceholder.typicode.com/posts";
         JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
-                for (int i = 0; i < response.length(); i++ ) {
-                    try {
-                        JSONObject posts = response.getJSONObject(i);
-                        String id = posts.getString("userId");
-                        TextView text = findViewById(R.id.name);
-                        text.append(id +"\n");
+                Gson convertidor = new Gson();
+                Type tipoListaResultado = new TypeToken<List<Resultado>>(){}.getType();
+                List<Resultado> resultados = convertidor.fromJson(response.toString(), tipoListaResultado);
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
+                //for (int i = 0; i < resultados.size(); i++ ) {
+                    //try {
+                        //JSONObject posts = response.getJSONObject(i);
+                        //int userId = resultados.get(i).getUserId();
+                        //int id = resultados.get(i).getId();
+                        //String title = resultados.get(i).getTitle();
+                        //String body = resultados.get(i).getBody();
+
+                        //TextView text = findViewById(R.id.res);
+                        //text.append(resultados.get(i).getUserId() +"\n" +
+                                //resultados.get(i).getBody() +"\n" +
+                                //resultados.get(i).getTitle() +"\n" +
+                                //resultados.get(i).getBody() +"\n" );
+                    //} catch (JSONException e) {
+                      //  e.printStackTrace();
+                    //}
+                //}
+
+                AdapterResultado mAdapter = new AdapterResultado(resultados);
+                mRvListaResultados.setAdapter(mAdapter);
 
             }
         }, new Response.ErrorListener() {
